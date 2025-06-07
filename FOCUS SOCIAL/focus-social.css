@@ -1,0 +1,199 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive;
+  background: url('/IMAGENES/fondo.png.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.social-container {
+  padding-bottom: 50px;
+}
+
+/* Aumentar tamaño del logo */
+.logo-zorro {
+  height: 390px;
+  width: 290px;
+  border-radius: 50%;
+}
+
+/* Título más grande y centrado */
+.titulo-social {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 0 #ff6600;
+}
+
+/* Contenedor más grande y hover mejorado */
+.mensaje-card {
+  background-color: rgba(255, 102, 0, 0.815);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  margin: 0 30px 30px 30px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.mensaje-card:hover {
+  background-color: rgba(255, 102, 0, 0.856);
+  transform: scale(1.02);
+}
+
+/* Responsive para textos y márgenes */
+@media (max-width: 768px) {
+  .titulo-social {
+    font-size: 1.8rem;
+  }
+
+  .logo-zorro {
+    height: 60px;
+    width: 60px;
+  }
+
+  .mensaje-card {
+    margin: 0 10px 15px;
+    padding: 1rem;
+  }
+
+  .iniciales-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+
+.menu-btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.mensaje-card {
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  margin: 0 20px;
+}
+
+.iniciales-circle {
+  background-color: #fff;
+  color: #ff6600;
+  font-weight: bold;
+  border: 3px solid #ff6600;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.nombre-copiable {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.nombre-copiable:hover {
+  text-decoration: underline;
+}
+
+.mensaje-texto {
+  color: #fff;
+  margin: 0;
+}
+/* === Header y MENÚ hamburguesa === */
+.bg-img{
+  background-image: url('../IMAGENES/fondovertical.png.png') !important;
+  background-size: cover;
+}
+.text-naraja{
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.btn-fondo-naranja{
+  background-color: #ff6600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-fondo-claro{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #ff6600;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-fondo-claro svg{
+  color: #ff6600 !important;
+  font-weight: bold;
+}
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: orange;
+  z-index: 1001;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+
+.side-menu ul li {
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.side-menu ul li a:hover {
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+}
+
+.side-menu.open {
+  left: 0;
+}
+.btn-fondo-naranja {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+}
+
+.btn-fondo-naranja:hover {
+  background-color: #e65c00;
+}

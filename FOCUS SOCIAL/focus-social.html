@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Social</title>
+  <link rel="stylesheet" href="/FOCUS SOCIAL/focus-social.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/HOME/home.css" />
+    <link rel="stylesheet" href="/HOME/all.css">
+
+</head>
+<body>
+
+  <div class="social-container text-white">
+
+        <!-- ENCABEZADO CON LOGO + TÍTULO + MENÚ -->
+        <nav class="navbar navbar-light bg-transparent px-3 py-2">
+        <img src="/IMAGENES/focus.png.png" alt="Logo" class="logo-zorro me-2" />
+        <h1 class="titulo-social mb-0 flex-grow-1 text-center">Focus Social</h1>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-naraja">Focus App</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-naraja" href="/HOME/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-naraja" href="/FOCUS SOCIAL/focus-social.html">Focus Social</a></li>
+                <li class="nav-item"><a class="nav-link text-naraja" href="/CONFIGURACION/configuración.html">Configuración</a></li>
+                <li class="nav-item mt-3"><a href="/INICIO/index.html" class="btn btn-fondo-naranja">Cerrar sesión</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+  </div>
+  </header>
+    <div class="mensaje-card d-flex align-items-start p-3 mt-4 flex-column flex-sm-row">
+  <div class="iniciales-circle">MS</div>
+  <div class="ms-0 ms-sm-3 mt-3 mt-sm-0 flex-grow-1 w-100">
+    <p class="nombre-copiable" onclick="copiarNombre('Manu S')">Manu S</p>
+    <p class="mensaje-texto">No entendí nada de javaaaa, help meeeeeeeee 😭😭😭</p>
+
+    <button class="btn btn-outline-light btn-sm mt-2" onclick="mostrarRespuesta(this)">Responder</button>
+
+    <div class="respuesta-form mt-2 d-none">
+      <textarea class="form-control mb-2" rows="2" placeholder="Escribe tu respuesta..."></textarea>
+      <button class="btn btn-fondo-naranja btn-sm">Enviar</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="mensaje-card d-flex align-items-start p-3 mt-4 flex-column flex-sm-row">
+  <div class="iniciales-circle">JG</div>
+  <div class="ms-0 ms-sm-3 mt-3 mt-sm-0 flex-grow-1 w-100">
+    <p class="nombre-copiable" onclick="copiarNombre('Juli G')">Juli G</p>
+    <p class="mensaje-texto"> Quien hizo lo de jossy ? 😭😭😭 </p>
+
+    <button class="btn btn-outline-light btn-sm mt-2" onclick="mostrarRespuesta(this)">Responder</button>
+
+    <div class="respuesta-form mt-2 d-none">
+      <textarea class="form-control mb-2" rows="2" placeholder="Escribe tu respuesta..."></textarea>
+      <button class="btn btn-fondo-naranja btn-sm">Enviar</button>
+    </div>
+  </div>
+</div>
+
+     <div class="mensaje-card d-flex align-items-start p-3 mt-4 flex-column flex-sm-row">
+  <div class="iniciales-circle">AR</div>
+  <div class="ms-0 ms-sm-3 mt-3 mt-sm-0 flex-grow-1 w-100">
+    <p class="nombre-copiable" onclick="copiarNombre('Andres R')">Andres R</p>
+    <p class="mensaje-texto">Hoy hay clase ? me quede dormido jajaj </p>
+
+    <button class="btn btn-outline-light btn-sm mt-2" onclick="mostrarRespuesta(this)">Responder</button>
+
+    <div class="respuesta-form mt-2 d-none">
+      <textarea class="form-control mb-2" rows="2" placeholder="Escribe tu respuesta..."></textarea>
+      <button class="btn btn-fondo-naranja btn-sm">Enviar</button>
+    </div>
+  </div>
+</div>
+    <div class="mensaje-card d-flex align-items-start p-3 mt-4 flex-column flex-sm-row">
+  <div class="iniciales-circle">LG</div>
+  <div class="ms-0 ms-sm-3 mt-3 mt-sm-0 flex-grow-1 w-100">
+    <p class="nombre-copiable" onclick="copiarNombre('Laura G')">Laura G</p>
+    <p class="mensaje-texto">Holaaaa y adios. </p>
+
+    <button class="btn btn-outline-light btn-sm mt-2" onclick="mostrarRespuesta(this)">Responder</button>
+
+    <div class="respuesta-form mt-2 d-none">
+      <textarea class="form-control mb-2" rows="2" placeholder="Escribe tu respuesta..."></textarea>
+      <button class="btn btn-fondo-naranja btn-sm">Enviar</button>
+    </div>
+  </div>
+</div>
+
+     <div class="mensaje-card d-flex align-items-start p-3 mt-4 flex-column flex-sm-row">
+  <div class="iniciales-circle">JJ</div>
+  <div class="ms-0 ms-sm-3 mt-3 mt-sm-0 flex-grow-1 w-100">
+    <p class="nombre-copiable" onclick="copiarNombre('Juan J')">Juan J</p>
+    <p class="mensaje-texto">Holaaaa &lt;3</p>
+
+    <button class="btn btn-outline-light btn-sm mt-2" onclick="mostrarRespuesta(this)">Responder</button>
+
+    <div class="respuesta-form mt-2 d-none">
+      <textarea class="form-control mb-2" rows="2" placeholder="Escribe tu respuesta..."></textarea>
+      <button class="btn btn-fondo-naranja btn-sm">Enviar</button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/HOME/all.css"></script>  
+    <script defer src="/HOME/menu.js"></script>
+  <script>
+    function copiarNombre(nombre) {
+      navigator.clipboard.writeText(nombre);
+      alert('Nombre copiado: ' + nombre);
+    }
+  </script>
+ 
+
+  <script>
+  function mostrarRespuesta(boton) {
+    const form = boton.nextElementSibling;
+    form.classList.toggle('d-none');
+  }
+
+  function copiarNombre(nombre) {
+    navigator.clipboard.writeText(nombre);
+    alert('Nombre copiado: ' + nombre);
+  }
+</script>
+
+<footer class="footer">
+    © 2025 Focus App.
+  </footer>
+
+</body>
+</html>
