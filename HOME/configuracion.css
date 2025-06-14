@@ -1,0 +1,188 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.config-page {
+  background-image: url('/IMAGENES/fondo.png.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animated.fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animated.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Título */
+.titulo {
+  font-size: 2.8rem;
+  color: white;
+  background-color: #ff6600;
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: inline-block;
+  text-shadow: 2px 2px #000;
+}
+
+/* Secciones */
+.seccion {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.seccion-titulo {
+  font-size: 1.8rem;
+  color: #ff6600;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 15px;
+}
+
+/* Datos */
+.dato {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px #000;
+  margin: 0;
+}
+
+.dato-list li {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px #000;
+  transition: transform 0.2s;
+}
+
+.dato-list li:hover {
+  transform: translateX(5px);
+  color: #ffd700;
+  cursor: pointer;
+}
+
+/* Imagen de perfil */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #ff6600;
+  transition: transform 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Zorro inferior */
+.zorro-inferior {
+  width: 100px;
+  height: auto;
+}
+/* === Header y MENÚ hamburguesa === */
+.bg-img{
+  background-image: url('../IMAGENES/fondovertical.png.png') !important;
+  background-size: cover;
+}
+.text-naraja{
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.btn-fondo-naranja{
+  background-color: #ff6600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-fondo-claro{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #ff6600;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-fondo-claro svg{
+  color: #ff6600 !important;
+  font-weight: bold;
+}
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: orange;
+  z-index: 1001;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+
+.side-menu ul li {
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.side-menu ul li a:hover {
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+/* === Contenido PRINCIPAL === */
+main {
+  padding-top: 60px;
+  text-align: center;
+}
